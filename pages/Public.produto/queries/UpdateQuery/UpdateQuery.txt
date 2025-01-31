@@ -1,0 +1,5 @@
+UPDATE public."produto" SET
+		"nome" = '{{update_form.fieldState.nome.isVisible ? update_form.formData.nome : update_form.sourceData.nome}}',
+		"descricao" = '{{update_form.fieldState.descricao.isVisible ? update_form.formData.descricao : update_form.sourceData.descricao}}',
+    "valor" = '{{update_form.fieldState.valor.isVisible ? update_form.formData.valor : update_form.sourceData.valor}}'
+WHERE "id" = {{data_table.selectedRow.id}};

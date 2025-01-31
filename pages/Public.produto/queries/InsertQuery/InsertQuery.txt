@@ -1,0 +1,8 @@
+INSERT INTO public."produto" (
+	"nome",
+	"descricao",
+	"valor")
+VALUES (
+	'{{insert_form.formData.nome}}',
+	'{{insert_form.formData.descricao}}',
+	'{{insert_form.formData.valor}}');
